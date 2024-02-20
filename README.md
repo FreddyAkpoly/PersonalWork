@@ -5,11 +5,11 @@
 
 ### Program 1: Bouncing Shapes
 
-A C++/SFML program which reads the description of a shape from a configuaration filem and them draws those shapes to the screen. 
+A C++/SFML program reads the description of a shape from a configuration file and then draws those shapes to the screen. 
 
-The shapes also bounce off the side of the window that contains them. This means that if the shapes left side hits the left side of the window the X speed is reverced. 
+The shapes also bounce off the side of the window that contains them. This means that the X speed is reversed if the shape's left side hits the window's left side. 
 
-Because SFML does not have a speed property for the shapes, I had to create a class that contains the shape and the speed of the shape. Example of the class is below.
+Because SFML does not have a speed property for the shapes, I had to create a class that contains the shape and the speed of the shape. An example of the class is below.
 
 ```
 class myRectangleShape {
