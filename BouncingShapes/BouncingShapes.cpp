@@ -8,9 +8,7 @@ class myRectangleShape {
     float m_xvel;
     float m_yvel;
 public:
-
     myRectangleShape(float vel,float yvel, sf::RectangleShape shape) :m_xvel(vel),m_yvel(yvel), m_shape(shape){
-
     }
 
     float getxVel() {
@@ -44,7 +42,6 @@ class myCircleShape {
     float m_xvel;
     float m_yvel;
 public:
-
     myCircleShape(float vel, float yvel, sf::CircleShape shape) :m_xvel(vel), m_yvel(yvel), m_shape(shape) {
 
     }
@@ -72,13 +69,10 @@ public:
     void setxVel(float xvel) {
         m_xvel = xvel;
     }
-
-
 };
 
 int main()
 {
-
     std::ifstream fin("config.txt");
 
     int windowW;     
@@ -102,7 +96,6 @@ int main()
     float xVelocity;
     float yVelocity;
 
-    
     while (fin >> type) {
         if (type == "Rectangle") {
             fin >> shapeXPos;
@@ -120,10 +113,6 @@ int main()
             aShape.setFillColor(shapeColor);
 
             myRectangleShape anShape(xVelocity,yVelocity,aShape);
-
-          
-       
-
             RectangleShapeList.push_back(anShape);
         }
         else if (type == "Circle") {
@@ -145,11 +134,7 @@ int main()
 
             CircleShapeList.push_back(anShape);
         }
-        
-  
-        
     }
-
 
     while (window.isOpen()) {
 
@@ -212,9 +197,5 @@ int main()
         }
         window.display();
     }
-   
-
-
-
     return 0;
 }
