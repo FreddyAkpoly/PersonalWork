@@ -59,4 +59,4 @@ RectangleShapeList.push_back(anShape);
 
 Demo
 
-![Alt Text](BouncingShapes.gif)
+![Alt Text](BouncingShapes/BouncingShapes.gif)
