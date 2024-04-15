@@ -57,6 +57,6 @@ myRectangleShape anShape(xVelocity,yVelocity,aShape);
 RectangleShapeList.push_back(anShape);
 ```
 
-Demo
+Demo Preview 
 
 ![Alt Text](BouncingShapes/BouncingShapes.gif)
